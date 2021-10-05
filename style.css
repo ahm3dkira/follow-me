@@ -50,36 +50,7 @@ a {
   font-size: 20px;
 
 }
-.row {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-.container-2 {
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  grid-gap: 30px;
-  padding: 15px;
-}
-.container-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-  grid-gap: 30px;
-  padding: 15px;
-}
-/* .my-section {
-  min-height: 100vh;
-  width: 80%;
-  margin: auto;
-  text-align: center;
-} */
-
-/* header section */
-
 .hero-btn {
-  /* display: inline-block; */
-  /* display: flex; */
-  /* flex-direction: ; */
   text-decoration: none;
   color: var(--text);
   border: 1px solid #e94560;
@@ -208,7 +179,7 @@ body.theme-lightmode header a {
   }
   header .nav-links {
     position: fixed;
-    background: var(--background); /*#000000;*/
+    background: var(--background);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -236,7 +207,6 @@ body.theme-lightmode header a {
   }
 }
 
-/***************************************************************/
 main{
   display: flex;
   flex-direction: column;
@@ -247,59 +217,6 @@ main{
 main .container > *{
   padding: 8px 0;
 }
-/* course section */
-.courses {
-  padding-top: 10px;
-  color: var(--text);
-}
-
-.courses .course-col {
-  flex-basis: 31%;
-  background: var(--cards);
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.3s;
-}
-
-.course-col:hover {
-  box-shadow: 0 0 20px 0px var(--text);
-}
-.courses h1 {
-  margin: 10px;
-}
-.courses p {
-  margin: 10px;
-}
-
-/* other section */
-.other {
-  padding-top: 120px;
-}
-.other-col {
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-}
-
-.other-col img {
-  width: 100%;
-  border-radius: 10px;
-}
-.other-col p {
-  padding: 0;
-}
-
-.other-col h3 {
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-/* footer */
-
 .about-us {
   width: 80%;
   margin: auto;
@@ -320,39 +237,6 @@ main .container > *{
   padding: 15px 0 25px;
 }
 
-#group-container a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 18px;
-}
-
-#group-container .one-course {
-  color: #717171;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  padding: 15px;
-}
-
-#group-container .one-course .one-link {
-  /* border: ; */
-  color: #717171;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  padding: 10px;
-}
-/* .cfl-logo {
-  border-radius: 50%;
-} */
-@media (max-width: 1200px) {
-  .container-3 {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    grid-gap: 30px;
-    padding: 15px;
-  }
-}
 
 @media (max-width: 750px) {
   p {
@@ -361,50 +245,17 @@ main .container > *{
   h1 {
     font-size: 28px;
   }
-  .row {
-    flex-direction: column;
-  }
-  .container-2,
-  .container-3 {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  /* .container-2 */
-  /* header section */
-  .text-box h1 {
-    font-size: 24px;
-  }
-
-  /* testimonials section */
-  .testimonials-col img {
-    margin-left: 0px;
-    margin-right: 15px;
-  }
-  /* cta */
-  .cta h1 {
-    font-size: 24px;
-  }
-  /* msg */
-  .msg-form button {
-    margin: 10px 0;
-  }
 }
 
-/***************************************************************/
 footer {
   position: fixed;
   bottom: 10px;
   left: 0;
   right: 0;
-  /* display: ; */
   width: 100%;
   text-align: center;
-  /* padding: 30px 0; */
 }
 footer h4 {
-  /* margin-bottom: 25px; */
   margin-top: 20px;
   font-weight: 600;
 }
@@ -426,7 +277,4 @@ footer .container {
 footer .container p {
   text-align: justify;
   padding: 0 3%;
-}
-footer .cfl-logo {
-  border-radius: 50%;
 }
